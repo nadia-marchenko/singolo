@@ -195,7 +195,7 @@ p.lighter {
   background-repeat: no-repeat;
   width: 8px;
   height: 14px;
-  margin: 8px 0 0 10px;
+  margin: 8px 0 0 11px;
   display: inline-block;
 }
 
@@ -204,7 +204,7 @@ p.lighter {
   background-repeat: no-repeat;
   width: 14px;
   height: 14px;
-  margin: 8px 0 0 10px;
+  margin: 8px 0 0 8px;
   fill: #666d89;
   display: inline-block;
 }
@@ -214,7 +214,7 @@ p.lighter {
   background-repeat: no-repeat;
   width: 14px;
   height: 12px;
-  margin: 8px 0 0 10px;
+  margin: 9px 0 0 8px;
   fill: #666d89;
   display: inline-block;
 }
@@ -224,7 +224,7 @@ p.lighter {
   background-repeat: no-repeat;
   width: 14px;
   height: 12px;
-  margin: 8px 0 0 10px;
+  margin: 9px 0 0 8px;
   fill: #666d89;
   display: inline-block;
 }
