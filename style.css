@@ -112,6 +112,7 @@ p.lighter-services {
   font-weight: lighter;
   font-size: 1.8rem;
   line-height: 3rem;
+  color: #666d89;
 }
 
 h1 {
@@ -658,6 +659,7 @@ textarea {
   padding: 7px 0px 0 14px;
   background-color: #d6564f;
   border: none;
+  resize: none;
 }
 
 #message-block {

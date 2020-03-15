@@ -7,6 +7,9 @@ const HORIZONTAL_PHONE_BUTTON = document.getElementById('horizontal-phone-button
 const PREV_BUTTON = document.getElementById('prev-button');
 const NEXT_BUTTON = document.getElementById('next-button');
 const ALL = document.getElementById('all');
+const WEB_DESIGN = document.getElementById('web-design');
+const GRAPHIC_DESIGN = document.getElementById('graphic-design');
+const ARTWORK = document.getElementById('artwork');
 const PORTFOLIO = document.getElementById('portfolio-gallery');
 
 MENU.addEventListener('click', (event) => {
@@ -90,14 +93,33 @@ NEXT_BUTTON.addEventListener('click', () => {
 });
 
 ALL.addEventListener('click', () => {
-  const imageList = document.querySelectorAll("div.image");
-  const arr = Array.from(imageList);
-
-  // for (let i=0; i<imageList.length;i++) {
-  //   arr.push(imageList[i]);
-  // }
-  console.log(arr);
+  shiftImages(1);
 });
 
+WEB_DESIGN.addEventListener('click', () => {
+  shiftImages(2);
+});
+
+GRAPHIC_DESIGN.addEventListener('click', () => {
+  shiftImages(3);
+});
+
+ARTWORK.addEventListener('click', () => {
+  shiftImages(4);
+});
+
+function shiftImages(shiftLength) {
+  let imageList = document.querySelectorAll("div.image");
+  imageList.forEach(el => document.getElementById("portfolio-gallery").removeChild(el));
+  let arr = shiftElements(Array.from(imageList),shiftLength);
+  arr.forEach(el => document.getElementById("portfolio-gallery").appendChild(el));
+}
+
+function shiftElements(array, shiftLength) {
+  for (let i=0;i<shiftLength;i++) {
+    array.push(array.shift());
+  }
+  return array;
+}
 
 
