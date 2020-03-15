@@ -54,9 +54,29 @@ sup {
   cursor: pointer;
 }
 
+li.active {
+  color: #f06c64;
+}
+
+li:not(.active):hover {
+  cursor: pointer;
+  color: #f06c64;
+}
+
 .slider {
+  display: flex;
+}
+
+.slider1 {
   height: 600px;
   background: #f06c64;
+  width: 1020px;
+}
+
+.slider2 {
+  background: url(assets/Slider.png);
+  height: 600px;
+  width: 1020px;
 }
 
 .phones {
@@ -162,6 +182,15 @@ h2.our-services {
   border: 3px solid #c7c8c7;
 }
 
+.black-screen {
+  width: 188px;
+  height: 333px;
+  margin: 22px 0 0 11px;
+  background: #000000;
+  background-position: -14px -135px;
+  border: 3px solid #c7c8c7;
+}
+
 .horizontal-screen::before {
   content: "";
   position: absolute;
@@ -172,6 +201,19 @@ h2.our-services {
   height: 188px;
   width: 338px;
   background: url(assets/Layer\ 5.png) 0 0 repeat;
+  background-position: -124px -120px;
+}
+
+.horizontal-black-screen::before {
+  content: "";
+  position: absolute;
+  top: 138px;
+  z-index: -1;
+  left: -60px;
+  transform: rotate(-90deg);
+  height: 188px;
+  width: 338px;
+  background: #000000 0 0 repeat;
   background-position: -124px -120px;
 }
 
@@ -224,6 +266,7 @@ h2.our-services {
   padding-top: 1px;
   border-radius: 21px;
   background-color: #fafafa;
+  cursor: pointer;
 }
 
 .square {
@@ -255,10 +298,33 @@ h2.our-services {
   flex-basis: 24%;
 }
 
-.icon-arrow {
+/* .icon-arrow {
   width: 16px;
   height: 27px;
   padding-top: 283px;
+  cursor: pointer;
+} */
+
+.prev {
+  position: absolute;
+  width: 16px;
+  height: 27px;
+  margin: 283px 0 0 40px;
+  cursor: pointer;
+  background: url(assets/chev.svg);
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.next {
+  position: absolute;
+  width: 16px;
+  height: 27px;
+  margin: 283px 0 0 960px;
+  cursor: pointer;
+  background: url(assets/next.svg);
+  background-repeat: no-repeat;
+  z-index: 1;
 }
 
 .slider-area {
@@ -365,6 +431,16 @@ p.lighter-employee {
   line-height: 2.2rem;
   color: #767e9e;
   margin-right: 8px;
+  cursor: pointer;
+}
+
+.tag.active {
+  color: #f06c64;
+}
+
+.tag:not(.active):hover {
+  cursor: pointer;
+  color: #f06c64;
 }
 
 .portfolio-gallery {
@@ -378,6 +454,11 @@ p.lighter-employee {
   width: 220px;
   height: 187px;
   margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.active-image {
+  border: 5px solid #F06C64;
 }
 
 .image-1 {
@@ -494,7 +575,13 @@ p.lighter-employee {
 }
 
 .icon:hover,
-.icon:focus {
+.icon:focus,
+.prev:hover,
+.prev:focus,
+.next:hover,
+.next:focus,
+.round-service:hover,
+.round-service:focus {
   filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
 }
 
@@ -571,6 +658,29 @@ textarea {
   padding: 7px 0px 0 14px;
   background-color: #d6564f;
   border: none;
+}
+
+#message-block {
+  position: absolute;
+  width: 100vw;
+  height: 105vh;
+  top: 400%;
+  left: 0;
+  background: #0008;
+}
+
+.hidden {
+  display: none;
+}
+
+#message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  background: #f48c8f;
 }
 
 .contact-information {
