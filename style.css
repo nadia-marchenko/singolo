@@ -637,8 +637,10 @@ p.lighter {
 }
 
 .input {
-  padding: 11px 499px 14px 14px;
   margin-bottom: 15px;
+  width: 619px;
+  height: 38px;
+  padding-left: 20px;
   border-radius: 5px;
   background-color: #d6564f;
   border: none;
@@ -646,7 +648,7 @@ p.lighter {
 
 .submit {
   padding: 12px 35px;
-  margin: 4px 0 0 504px;
+  margin-left: 537px;
   font-size: 1.5rem;
   background-color: #f0d8d9;
   border-radius: 5px;
@@ -656,7 +658,10 @@ p.lighter {
 
 textarea {
   border-radius: 5px;
-  padding: 7px 0px 0 14px;
+  padding-left: 20px;
+  padding-top: 10px;
+  width: 619px;
+  height: 202px;
   background-color: #d6564f;
   border: none;
   resize: none;
@@ -665,7 +670,7 @@ textarea {
 #message-block {
   position: absolute;
   width: 100vw;
-  height: 105vh;
+  height: 107vh;
   top: 400%;
   left: 0;
   background: #0008;
@@ -677,8 +682,8 @@ textarea {
 
 #message {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 20%;
+  left: 43%;
   padding: 5px;
   border-radius: 5px;
   text-align: center;
