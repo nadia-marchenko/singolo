@@ -11,6 +11,56 @@ const WEB_DESIGN = document.getElementById('web-design');
 const GRAPHIC_DESIGN = document.getElementById('graphic-design');
 const ARTWORK = document.getElementById('artwork');
 const PORTFOLIO = document.getElementById('portfolio-gallery');
+let items = document.querySelectorAll('.item');
+let currentItem = 0;
+let isEnabled = true;
+
+function changeCurrentItem (n) {
+  currentItem = (n + items.length) % items.length;
+}
+
+function hideItem(direction) {
+  isEnabled = false;
+  items[currentItem].classList.add(direction);
+  items[currentItem].addEventListener('animationend', function() {
+    this.classList.remove('active',direction);
+  });
+}
+
+
+
+function showItem(direction) {
+  items[currentItem].classList.add('next', direction);
+  items[currentItem].addEventListener('animationend', function() {
+    this.classList.remove('next', direction);
+    this.classList.add('active');
+    isEnabled = true;
+  });
+}
+
+function previousItem(n) {
+  hideItem('to-right');
+  changeCurrentItem(n - 1);
+  showItem('from-left');
+}
+
+function nextItem(n) {
+  hideItem('to-left');
+  changeCurrentItem(n + 1);
+  showItem('from-right');
+}
+
+PREV_BUTTON.addEventListener('click', function() {
+  if (isEnabled) {
+    previousItem(currentItem);
+  }
+});
+
+NEXT_BUTTON.addEventListener('click', function() {
+  if (isEnabled) {
+    nextItem(currentItem);
+  }
+});
 
 MENU.addEventListener('click', (event) => {
   MENU.querySelectorAll('li').forEach(el => el.classList.remove('active'));
@@ -67,28 +117,6 @@ HORIZONTAL_PHONE_BUTTON.addEventListener('click', () => {
   }
   else {
     document.getElementById('horizontal-screen').classList.add('horizontal-black-screen');
-  }
-});
-
-PREV_BUTTON.addEventListener('click', () => {
-  if (document.getElementById('slider2').classList.contains('hidden')) {
-    document.getElementById('slider2').classList.remove('hidden');
-  document.getElementById('slider1').classList.add('hidden');
-  }
-  else {
-    document.getElementById('slider2').classList.add('hidden');
-    document.getElementById('slider1').classList.remove('hidden');
-  }
-});
-
-NEXT_BUTTON.addEventListener('click', () => {
-  if (document.getElementById('slider2').classList.contains('hidden')) {
-    document.getElementById('slider2').classList.remove('hidden');
-  document.getElementById('slider1').classList.add('hidden');
-  }
-  else {
-    document.getElementById('slider2').classList.add('hidden');
-    document.getElementById('slider1').classList.remove('hidden');
   }
 });
 

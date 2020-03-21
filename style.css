@@ -21,6 +21,10 @@ body {
 
 .header {
   padding-top: 40px;
+  position: fixed;
+  width: 1020px;
+  height: 53px;
+  z-index: 2;
   text-transform: uppercase;
   background: #2d303a;
   color: #ffffff;
@@ -28,7 +32,7 @@ body {
 }
 
 .header-bottom {
-  margin-top: 35px;
+  margin-top: 23px;
   height: 6px;
   background-color: #323746;
 }
@@ -65,15 +69,74 @@ li:not(.active):hover {
 
 .slider {
   display: flex;
+  padding-top: 94px;
+  overflow: hidden;
+  position: relative;
+}
+
+.item {
+  animation: 0.5s ease-in-out;
+  display: none;
+  position: relative;
+  margin: 0 auto;
+}
+
+.item.active {
+  display: block;
+  width: 1020px;
+}
+
+.to-left {
+  animation-name: left;
+}
+
+.to-right {
+  animation-name: right;
+  animation-direction: reverse;
+}
+
+.from-left {
+  animation-name: left;
+  animation-direction: reverse;
+}
+
+.from-right {
+  animation-name: right;
+}
+
+@keyframes left {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes example {
+  from {left: -100%;}
+  to {left: 0%;}
 }
 
 .slider1 {
+  position: relative;
+  left: 0%;
   height: 600px;
   background: #f06c64;
   width: 1020px;
 }
 
 .slider2 {
+  position: relative;
   background: url(assets/Slider.png);
   height: 600px;
   width: 1020px;
@@ -219,8 +282,6 @@ h2.our-services {
 }
 
 .horizontal-screen {
-  /*background: url(assets/Layer\ 5.png);
-  background-position: center;*/
   width: 185px;
   height: 335px;
   margin: 20px 0 0 12px;
@@ -299,14 +360,18 @@ h2.our-services {
   flex-basis: 24%;
 }
 
-/* .icon-arrow {
-  width: 16px;
-  height: 27px;
-  padding-top: 283px;
-  cursor: pointer;
-} */
+.next {
+  display: block;
+  width: 1020px;
+  position: absolute;
+}
 
-.prev {
+.active,
+.next {
+  display: block;
+}
+
+.prev-button {
   position: absolute;
   width: 16px;
   height: 27px;
@@ -317,7 +382,7 @@ h2.our-services {
   z-index: 1;
 }
 
-.next {
+.next-button {
   position: absolute;
   width: 16px;
   height: 27px;
