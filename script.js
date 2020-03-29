@@ -11,6 +11,7 @@ const WEB_DESIGN = document.getElementById('web-design');
 const GRAPHIC_DESIGN = document.getElementById('graphic-design');
 const ARTWORK = document.getElementById('artwork');
 const PORTFOLIO = document.getElementById('portfolio-gallery');
+const BURGER_MENU = document.getElementById('header__burger');
 let items = document.querySelectorAll('.item');
 let currentItem = 0;
 let isEnabled = true;
@@ -26,8 +27,6 @@ function hideItem(direction) {
     this.classList.remove('active',direction);
   });
 }
-
-
 
 function showItem(direction) {
   items[currentItem].classList.add('next', direction);
@@ -65,6 +64,22 @@ NEXT_BUTTON.addEventListener('click', function() {
 MENU.addEventListener('click', (event) => {
   MENU.querySelectorAll('li').forEach(el => el.classList.remove('active'));
   event.target.classList.add('active');
+});
+
+BURGER_MENU.addEventListener('click', (event) => {
+  BURGER_MENU.querySelector('header__navigation'.forEach(el => el.classList.add('active')));
+  event.target.classList.add('active');
+});
+
+BURGER_MENU.addEventListener('click', () => {
+  if(document.getElementById('header__navigation').classList.contains('active')) {
+    document.getElementById('header__navigation').classList.remove('active');
+    document.getElementById('header__burger').classList.remove('active');
+  }
+  else {
+    document.getElementById('header__navigation').classList.add('active');
+    document.getElementById('header__burger').classList.add('active');
+  }
 });
 
 TAGS.addEventListener('click', (event) => {

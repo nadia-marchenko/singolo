@@ -12,153 +12,158 @@
 <body>
   <header class="header">
       <div class="wrapper header__wrapper">
-          <span class="logo">SINGOLO<sup>*</sup></span>
-          <nav class="header__navigation">
-              <ul id="menu" class="navigation">
-                  <a href="#"><li class="navigation__link active">Home</li></a>
-                  <a href="#services"><li class="navigation__link">Services</li></a>
-                  <a href="#portfolio"><li class="navigation__link">Portfolio</li></a>
-                  <a href="#about"><li class="navigation__link">About</li></a>
-                  <a href="#contact"><li class="navigation__link">Contact</li></a>
-              </ul>
-          </nav>
+        <div id="header__burger" class="header__burger">
+          <span></span>
+        </div>
+        <span class="logo">SINGOLO<sup>*</sup></span>
+        <nav id="header__navigation" class="header__navigation">
+          <div class="logo-mobile">
+            <span class="logo">SINGOLO<sup>*</sup></span>
+          </div>
+          <ul id="menu" class="navigation">
+              <a href="#home"><li class="navigation__link active">Home</li></a>
+              <a href="#services"><li class="navigation__link">Services</li></a>
+              <a href="#portfolio"><li class="navigation__link">Portfolio</li></a>
+              <a href="#about"><li class="navigation__link">About</li></a>
+              <a href="#contact"><li class="navigation__link">Contact</li></a>
+          </ul>
+        </nav>
       </div>
       <div class="header-bottom"></div>
   </header>
-  <div class="slider">
-    <div id="prev-button" class="prev-button"></div>
-    <div id="slider1" class="slider1 item active">
-      <div class="wrapper">
-          <div class="slider-area">
-              <div class="phones">
-                  <div class="phone-area">
-                      <div class="phone shadow">
-                          <div class="camera-circle">
-                              <div class="camera-dot"></div>
-                          </div>
-                          <div class="speaker-vertical"></div>
-                          <div id="vertical-screen" class="phone-screen vertical-screen"></div>
-                          <div class="phone-button">
-                              <div id="vertical-phone-button" class="circle">
-                                      <div class="square"></div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="phone-area-horizontal">
-                      <div class="phone rotate shadow-reverse">
-                          <div class="camera-circle">
-                              <div class="camera-dot"></div>
-                          </div>
-                          <div class="speaker-vertical"></div>
-                          <div id="horizontal-screen" class="phone-screen horizontal-screen"></div>
-                          <div class="phone-button">
-                              <div id="horizontal-phone-button" class="circle">
-                                      <div class="square"></div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-    </div>
-    <div id="slider2" class="slider2 item"></div>
-    <div id="next-button" class="next-button"></div>
-  </div>
-  <section id="services" class="services">
-      <div class="wrapper">
-          <h1>Our Services</h1>
-          <p class="lighter-services">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <div class="container">
-              <div class="item1">
-                  <div class="round-service">
-                      <object class="icon-service" data="assets/pen.svg" type="image/svg+xml">Your browser does not support SVG</object>
-                  </div>
-              </div>
-              <div class="item2">
-                  <h2 class="our-services">Custom Design</h2>
-                  <p class="service">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
-              </div>
-              <div class="item1">
-                  <div class="round-service">
-                          <object class="icon-service" data="assets/bulb.svg" type="image/svg+xml">Your browser does not support SVG</object>
-                  </div>
-              </div>
-              <div class="item2">
-                  <h2 class="our-services">Inovative Ideas</h2>
-                  <p class="service">Quisque luctus, quam eget molestie com&shy;modo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
-              </div>
-              <div class="item1">
-                      <div class="round-service">
-                          <object class="icon-service" data="assets/heart.svg" type="image/svg+xml">Your browser does not support SVG</object>
-                      </div>
-                  </div>
-                  <div class="item2">
-                      <h2 class="our-services">Love Is The Answer</h2>
-                      <p class="service">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
-                  </div>
-          </div>
-          <div class="container">
-              <div class="item1">
-                  <div class="round-service">
-                          <object class="icon-service" data="assets/phone.svg" type="image/svg+xml">Your browser does not support SVG</object>
-                      </div>
-              </div>
-              <div class="item2">
-                  <h2 class="our-services">Responsive Layout</h2>
-                  <p class="service">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
-              </div>
-              <div class="item1">
-                  <div class="round-service">
-                      <object class="icon-service" data="assets/bubble.svg" type="image/svg+xml">Your browser does not support SVG</object>
-                  </div>
-              </div>
-              <div class="item2">
-                  <h2 class="our-services">24 / 7 Support</h2>
-                  <p class="service">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .</p>
-              </div>
-              <div class="item1">
-                      <div class="round-service">
-                          <object class="icon-service" data="assets/star.svg" type="image/svg+xml">Your browser does not support SVG</object>
-                      </div>
-              </div>
-              <div class="item2">
-                  <h2 class="our-services">Feel Like A Star</h2>
-                  <p class="service">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
-              </div>
-          </div>
-      </div>
-  </section>
-  <div class="bg-bottom"></div>
-  <div id="portfolio" class="portfolio">
-      <div class="wrapper">
-        <h2 class="normal">Portfolio</h2>
-        <p class="description">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-        <div id="tags" class="portfolio-tags tags">
-            <span id="all" class="tag tag_selected active">All</span>
-            <span id="web-design" class="tag tag_bordered">Web Design</span>
-            <span id="graphic-design" class="tag tag_bordered">Graphic Design</span>
-            <span id="artwork" class="tag tag_bordered">Artwork</span>
-        </div>
-        <div id="portfolio-gallery" class="portfolio-gallery">
-          <div class="image-1 image"></div>
-          <div class="image-4 image"></div>
-          <div class="image-7 image"></div>
-          <div class="image-10 image"></div>
-          <div class="image-2 image"></div>
-          <div class="image-5 image"></div>
-          <div class="image-8 image"></div>
-          <div class="image-11 image"></div>
-          <div class="image-3 image"></div>
-          <div class="image-6 image"></div>
-          <div class="image-9 image"></div>
-          <div class="image-12 image"></div>
+  <div id="content">
+    <div id="home" class="slider menu-section">
+      <div id="prev-button" class="prev-button"></div>
+      <div id="slider1" class="slider1 item active">
+        <div class="wrapper">
+            <div class="slider-area">
+                <div class="phones">
+                    <div class="phone-area new-phone">
+                        <div class="phone shadow">
+                            <div class="camera-circle">
+                                <div class="camera-dot"></div>
+                            </div>
+                            <div class="speaker-vertical"></div>
+                            <div id="vertical-screen" class="phone-screen vertical-screen"></div>
+                            <div class="phone-button">
+                                <div id="vertical-phone-button" class="circle">
+                                        <div class="square"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phone-area-horizontal">
+                        <div class="phone rotate shadow-reverse">
+                            <div class="camera-circle">
+                                <div class="camera-dot"></div>
+                            </div>
+                            <div class="speaker-vertical"></div>
+                            <div id="horizontal-screen" class="phone-screen horizontal-screen"></div>
+                            <div class="phone-button">
+                                <div id="horizontal-phone-button" class="circle">
+                                        <div class="square"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
       </div>
-      <div class="first-bottom"></div>
+      <div id="slider2" class="slider2 item"></div>
+      <div id="next-button" class="next-button"></div>
     </div>
-    <div id="about" class="about-us">
+    <div id="services" class="services menu-section">
+        <div class="wrapper">
+            <h1>Our Services</h1>
+            <p class="lighter-services">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            <div class="services-items">
+              <div class="item1">
+                <div class="round-service">
+                  <object class="icon-service" data="assets/pen.svg" type="image/svg+xml">Your browser does not support SVG</object>
+                </div>
+              </div>
+              <div class="item2">
+                <h2 class="our-services">Custom Design</h2>
+                <p class="service">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+              </div>
+              <div class="item1">
+                <div class="round-service">
+                  <object class="icon-service" data="assets/bulb.svg" type="image/svg+xml">Your browser does not support SVG</object>
+                </div>
+              </div>
+              <div class="item2">
+                <h2 class="our-services">Inovative Ideas</h2>
+                <p class="service">Quisque luctus, quam eget molestie com&shy;modo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+              </div>
+              <div class="item1">
+                <div class="round-service">
+                  <object class="icon-service" data="assets/heart.svg" type="image/svg+xml">Your browser does not support SVG</object>
+                </div>
+              </div>
+              <div class="item2">
+                <h2 class="our-services">Love Is The Answer</h2>
+                <p class="service">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+              </div>
+              <div class="item1">
+                <div class="round-service">
+                  <object class="icon-service" data="assets/phone.svg" type="image/svg+xml">Your browser does not support SVG</object>
+                </div>
+              </div>
+              <div class="item2">
+                <h2 class="our-services">Responsive Layout</h2>
+                <p class="service">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
+              </div>
+              <div class="item1">
+                <div class="round-service">
+                  <object class="icon-service" data="assets/bubble.svg" type="image/svg+xml">Your browser does not support SVG</object>
+                </div>
+              </div>
+              <div class="item2">
+                <h2 class="our-services">24 / 7 Support</h2>
+                <p class="service">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .</p>
+              </div>
+              <div class="item1">
+                <div class="round-service">
+                  <object class="icon-service" data="assets/star.svg" type="image/svg+xml">Your browser does not support SVG</object>
+                </div>
+              </div>
+              <div class="item2">
+                <h2 class="our-services">Feel Like A Star</h2>
+                <p class="service">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-bottom"></div>
+    <div id="portfolio" class="portfolio menu-section">
+        <div class="wrapper">
+          <h2 class="normal">Portfolio</h2>
+          <p class="description">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+          <div id="tags" class="portfolio-tags tags">
+              <span id="all" class="tag tag_selected active">All</span>
+              <span id="web-design" class="tag tag_bordered">Web Design</span>
+              <span id="graphic-design" class="tag tag_bordered">Graphic Design</span>
+              <span id="artwork" class="tag tag_bordered">Artwork</span>
+          </div>
+          <div id="portfolio-gallery" class="portfolio-gallery">
+            <div class="image-1 image"></div>
+            <div class="image-4 image"></div>
+            <div class="image-7 image"></div>
+            <div class="image-10 image"></div>
+            <div class="image-2 image"></div>
+            <div class="image-5 image"></div>
+            <div class="image-8 image"></div>
+            <div class="image-11 image"></div>
+            <div class="image-3 image"></div>
+            <div class="image-6 image"></div>
+            <div class="image-9 image"></div>
+            <div class="image-12 image"></div>
+          </div>
+        </div>
+        <div class="first-bottom"></div>
+    </div>
+    <div id="about" class="about-us menu-section">
       <div class="wrapper">
         <h2 class="normal">About Us</h2>
         <p class="description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -167,7 +172,7 @@
             <img class="photo" src="assets/adam.png" alt="Adam Jensen">
             <h3>Adam Jensen</h3>
             <p class="lighter-employee">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
-            <div class="sharing-button">
+            <div class="sharing-button first-sharing">
                 <div class="round-sharing">
                   <span class="icon icon-fb"></span>
                 </div>
@@ -224,7 +229,7 @@
       </div>
       <div class="second-bottom"></div>
     </div>
-    <div id="contact" class="contacts">
+    <div id="contact" class="contacts menu-section">
         <div class="wrapper wrapper-contacts">
           <h2 class="contact-h2">Get a Quote</h2>
           <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -266,27 +271,28 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="background-bottom"></div>
-      <div class="footer">
-        <div class="wrapper footer-wrapper">
-          <p class="copyright">&#169; Copyright 2013</p>
-          <div class="social-media">
-            <div class="round">
-                <span class="icon icon-fb"></span>
-              </div>
-              <div class="round">
-                <span class="icon icon-google"></span>
-              </div>
-              <div class="round">
-                <span class="icon icon-twitter"></span>
-              </div>
-              <div class="round">
-                <span class="icon icon-linkedin"></span>
-              </div>
+    </div>
+  </div>
+  <div class="background-bottom"></div>
+  <div class="footer">
+    <div class="wrapper footer-wrapper">
+      <p class="copyright">&#169; Copyright 2013</p>
+      <div class="social-media">
+        <div class="round">
+            <span class="icon icon-fb"></span>
           </div>
-        </div>
+          <div class="round">
+            <span class="icon icon-google"></span>
+          </div>
+          <div class="round">
+            <span class="icon icon-twitter"></span>
+          </div>
+          <div class="round">
+            <span class="icon icon-linkedin"></span>
+          </div>
       </div>
+    </div>
+  </div>
       <script src="script.js" async></script>
 </body>
 </html>
