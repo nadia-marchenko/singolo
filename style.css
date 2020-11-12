@@ -659,11 +659,12 @@ p.lighter-employee {
 
 .round-sharing {
   border-radius: 23px;
-  border: 1px solid #666d89;
+  border: 1px solid #4c4c4c;
   width: 30px;
   height: 29px;
   margin-top: -23px;
   margin-right: 8px;
+  cursor: pointer;
 }
 
 .icon-fb {
@@ -713,6 +714,7 @@ p.lighter-employee {
 .next:focus,
 .round-service:hover,
 .round-service:focus {
+  transition-delay: .2s;
   filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
 }
 
@@ -783,12 +785,20 @@ p.lighter {
 
 .submit {
   padding: 12px 35px;
-  margin-top: 5px;
+  margin: 5px 0 20px;
   font-size: 1.5rem;
   background-color: #f0d8d9;
   border-radius: 5px;
   border: none;
   color: #d6564f;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.submit:hover {
+  background-color: #d6564f;
+  color: #f0d8d9;
+  transition: 0.4s;
 }
 
 textarea {
@@ -837,11 +847,13 @@ textarea {
 
 .icon {
   margin: 0 10px 0 3px;
+  filter: invert(0.3) sepia(0) saturate(75) hue-rotate(186deg);
+  transition-delay: 0.1s;
 }
 
 .contact-block {
-  font-size: 1.2rem;
-  line-height: 2.2rem;
+  font-size: 1.3rem;
+  line-height: 2.6rem;
   margin-top: -3px;
 }
 
@@ -866,7 +878,6 @@ a {
   width: 14px;
   height: 14px;
   background-image: url(assets/location.svg);
-  fill: #f0d8d9;
   display: inline-block;
   background-repeat: no-repeat;
 }
@@ -875,7 +886,6 @@ a {
   width: 14px;
   height: 14px;
   background-image: url(assets/phone-contact.svg);
-  fill: #f0d8d9;
   display: inline-block;
   background-repeat: no-repeat;
 }
@@ -884,13 +894,14 @@ a {
   width: 14px;
   height: 14px;
   background-image: url(assets/mail.svg);
-  fill: #f0d8d9;
   display: inline-block;
   background-repeat: no-repeat;
 }
 
 .icon-contacts {
+  filter: invert(99%) sepia(0%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
   margin: 5px 2px 0 1px;
+  vertical-align: middle;
 }
 
 .background-bottom {
@@ -910,11 +921,12 @@ a {
 
 .round {
   border-radius: 23px;
-  border: 1px solid #666d89;
+  border: 1px solid #4c4c4c;
   width: 30px;
   height: 29px;
   margin-top: -23px;
   margin-left: 8px;
+  cursor: pointer;
 }
 
 .icon-fb {
@@ -958,6 +970,7 @@ a {
 
 .icon:hover,
 .icon:focus {
+  transition-delay: 0.1s;
   filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
 }
 
