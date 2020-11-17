@@ -149,9 +149,12 @@ li:not(.active):hover {
 
 .slider2 {
   position: relative;
-  background: url(assets/Slider.png);
+  background-image: url(assets/Slider.png);
   height: 600px;
-  width: 1020px;
+  /* height: 58.82291666666667vw; */
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .phones {
@@ -401,9 +404,10 @@ h2.our-services {
 .prev-button {
   flex: 1 0 5%;
   position: absolute;
+  top: 312px;
   width: 16px;
   height: 27px;
-  margin: 283px 0 0 40px;
+  margin: 65px 0 0 40px;
   cursor: pointer;
   background: url(assets/chev.svg);
   background-repeat: no-repeat;
@@ -413,9 +417,11 @@ h2.our-services {
 .next-button {
   flex: 1 0 5%;
   position: absolute;
+  top: 312px;
+  right: 40px;
   width: 16px;
   height: 27px;
-  margin: 283px 0 0 960px;
+  margin-top: 65px;
   cursor: pointer;
   background: url(assets/next.svg);
   background-repeat: no-repeat;
@@ -1024,6 +1030,20 @@ a {
 
   .employee {
     width: 30%;;
+  }
+
+  .slider2 {
+    height: 58.82291666666667vw;
+  }
+
+  .prev-button {
+    top: 28vw;
+    margin-left: 5vw;
+  }
+
+  .next-button {
+    top: 28vw;
+    right: 4vw;
   }
 /*
   .form {
