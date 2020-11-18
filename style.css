@@ -15,9 +15,6 @@ body {
   margin: auto;
 }
 
-.header__wrapper {
-}
-
 .header {
   padding-top: 40px;
   position: fixed;
@@ -219,16 +216,6 @@ li:not(.active):hover {
   background-repeat: no-repeat;
 }
 
-.phones {
-  display: flex;
-  max-width: 917px;
-  width: 100%;
-  margin: auto;
-  padding-top: 54px;
-  align-items: center;
-  justify-content: space-around;
-}
-
 .phone-area-horizontal {
   width: 466px;
   height: 215px;
@@ -317,15 +304,6 @@ h2.our-services {
   border-radius: 25px;
 }
 
-.vertical-screen {
-  width: 188px;
-  height: 333px;
-  margin: 22px 0 0 11px;
-  background: url(assets/Layer\ 6.png);
-  background-position: -14px -135px;
-  border: 3px solid #c7c8c7;
-}
-
 .black-screen {
   width: 188px;
   height: 333px;
@@ -366,63 +344,6 @@ h2.our-services {
   height: 335px;
   margin: 20px 0 0 12px;
   border: 3px solid #c7c8c7;
-}
-
-.phone {
-  width: 213px;
-  height: 456px;
-  border-radius: 27px;
-  background-color: #f2f2f2;
-  border: 1px solid #f2f2f2;
-}
-
-.camera-circle {
-  margin: 14px 0 0 101px;
-  width: 9px;
-  height: 9px;
-  border-radius: 20px;
-  background-color: #d8d8d8;
-  border: 1px solid #f2f2f2;
-}
-
-.camera-dot {
-  width: 3px;
-  height: 3px;
-  margin: 3px 0 0 3px;
-  border-radius: 2px;
-  background-color: #eb5055;
-}
-
-.speaker-vertical {
-  width: 36px;
-  height: 5px;
-  margin: 10px 0 0 90px;
-  border-radius: 3px;
-  background-color: #acacac;
-}
-
-.circle {
-  width: 42px;
-  height: 42px;
-  margin: 7px 0 0 85px;
-  padding-top: 1px;
-  border-radius: 21px;
-  background-color: #fafafa;
-  cursor: pointer;
-}
-
-.square {
-  width: 12px;
-  height: 12px;
-  margin: 12px 0 0 13px;
-  border: 2px solid #bababa;
-  border-radius: 4px;
-  background-color: #fafafa;
-}
-
-.rotate {
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg) translate(-123px, -106px);
 }
 
 .bg-bottom {
@@ -489,18 +410,6 @@ h2.our-services {
   background: url(assets/next.svg);
   background-repeat: no-repeat;
   z-index: 1;
-}
-
-.slider-area {
-  display: flex;
-}
-
-.shadow {
-  box-shadow: 25px 25px rgba(0, 0, 0, 0.15);
-}
-
-.shadow-reverse {
-  box-shadow: 25px -25px rgba(0, 0, 0, 0.15);
 }
 
 .first-bottom {
@@ -1056,10 +965,6 @@ a {
   margin-top: 46px;
 }
 
-/* .new-phone {
-  display: none;
-} */
-
 @media (max-width: 1019px) {
   .image {
     flex: 1 0 25%;
@@ -1150,27 +1055,6 @@ a {
     width: 19vw;
     height: 33.4vw;
   }
-
-/*
-  .form {
-    flex: 1 0 60%;
-  } */
-
-  /* .phone-area,
-  .vertical-screen,
-  .black-screen,
-  .camera-circle,
-  .camera-dot,
-  .circle,
-  .square,
-  .speaker-vertical {
-    display: none;
-  }
-
-  .new-phone {
-    display: block;
-    background-image: url(assets/phone-vertical.png);
-  } */
 }
 
 @media (max-width: 767px) {
