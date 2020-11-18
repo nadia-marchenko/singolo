@@ -2,8 +2,8 @@ const MENU = document.getElementById('menu');
 const BUTTON = document.getElementById('button');
 const CLOSE_BUTTON = document.getElementById('close-button');
 const TAGS = document.getElementById('tags');
-const VERTICAL_PHONE_BUTTON = document.getElementById('vertical-phone-button');
-const HORIZONTAL_PHONE_BUTTON = document.getElementById('horizontal-phone-button');
+// const VERTICAL_PHONE_BUTTON = document.getElementById('vertical-phone-button');
+// const HORIZONTAL_PHONE_BUTTON = document.getElementById('horizontal-phone-button');
 const PREV_BUTTON = document.getElementById('prev-button');
 const NEXT_BUTTON = document.getElementById('next-button');
 const ALL = document.getElementById('all');
@@ -115,25 +115,25 @@ CLOSE_BUTTON.addEventListener('click', () => {
   document.getElementById('message-block').classList.add('hidden');
 });
 
-VERTICAL_PHONE_BUTTON.addEventListener('click', () => {
-  if(document.getElementById('vertical-screen').classList.contains('black-screen')) {
-    document.getElementById('vertical-screen').classList.remove('black-screen');
-    document.getElementById('vertical-screen').classList.add('vertical-screen');
-  }
-  else {
-    document.getElementById('vertical-screen').classList.add('black-screen');
-  }
-});
+// VERTICAL_PHONE_BUTTON.addEventListener('click', () => {
+//   if(document.getElementById('vertical-screen').classList.contains('black-screen')) {
+//     document.getElementById('vertical-screen').classList.remove('black-screen');
+//     document.getElementById('vertical-screen').classList.add('vertical-screen');
+//   }
+//   else {
+//     document.getElementById('vertical-screen').classList.add('black-screen');
+//   }
+// });
 
-HORIZONTAL_PHONE_BUTTON.addEventListener('click', () => {
-  if(document.getElementById('horizontal-screen').classList.contains('horizontal-black-screen')) {
-    document.getElementById('horizontal-screen').classList.remove('horizontal-black-screen');
-    document.getElementById('horizontal-screen').classList.add('horizontal-screen');
-  }
-  else {
-    document.getElementById('horizontal-screen').classList.add('horizontal-black-screen');
-  }
-});
+// HORIZONTAL_PHONE_BUTTON.addEventListener('click', () => {
+//   if(document.getElementById('horizontal-screen').classList.contains('horizontal-black-screen')) {
+//     document.getElementById('horizontal-screen').classList.remove('horizontal-black-screen');
+//     document.getElementById('horizontal-screen').classList.add('horizontal-screen');
+//   }
+//   else {
+//     document.getElementById('horizontal-screen').classList.add('horizontal-black-screen');
+//   }
+// });
 
 ALL.addEventListener('click', () => {
   shiftImages(1);

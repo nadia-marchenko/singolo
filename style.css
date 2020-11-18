@@ -147,6 +147,58 @@ li:not(.active):hover {
   width: 1020px;
 }
 
+.slider1-wrapper {
+  position: relative;
+}
+
+.phone-horizontal {
+  position: absolute;
+  right: 80px;
+  top: 185px;
+  max-height: 245px;
+  height: 24vw;
+}
+
+.phone-vertical {
+  position: absolute;
+  top: 60px;
+  left: 90px;
+  max-width: 245px;
+  width: 24vw;
+}
+
+.vertical-phone-btn {
+  position: absolute;
+  left: 180px;
+  bottom: 82px;
+  width: 40px;
+}
+
+.horizontal-phone-btn {
+  position: absolute;
+  top: 275px;
+  right: 524px;
+  height: 40px;
+}
+
+.black-vertical-screen {
+  position: absolute;
+  top: 126.4px;
+  left: 104.4px;
+  width: 192.124565px;
+  height: 340.134567px;
+  background-color: #000000;
+}
+
+.black-horizontal-screen {
+  position: absolute;
+  right: 171.5px;
+  top: 199.498676px;
+  height: 192.124565px;
+  width: 341px;
+  background-color: #000000;
+}
+
 .slider2 {
   position: relative;
   background-image: url(assets/Slider.png);
@@ -159,7 +211,8 @@ li:not(.active):hover {
 
 .phones {
   display: flex;
-  width: 917px;
+  max-width: 917px;
+  width: 100%;
   margin: auto;
   padding-top: 54px;
   align-items: center;
@@ -1036,15 +1089,58 @@ a {
     height: 58.82291666666667vw;
   }
 
+  .slider1 {
+    height: 58.82291666666667vw;
+    width: auto;
+  }
+
   .prev-button {
     top: 28vw;
-    margin-left: 5vw;
+    margin-left: 4vw;
   }
 
   .next-button {
     top: 28vw;
     right: 4vw;
   }
+
+  .phone-horizontal {
+    right: 11vw;
+    top: 15vw;
+  }
+
+  .phone-vertical {
+    left: 11vw;
+    top: 6vw;
+  }
+
+  .vertical-phone-btn {
+    left: 19.6vw;
+    bottom: 7.7vw;
+    width: 4.5vw;
+  }
+
+  .horizontal-phone-btn {
+    right: 54.2vw;
+    top: 23.4vw;
+    width: 4.5vw;
+    height: auto;
+  }
+
+  .black-horizontal-screen {
+    right: 19.856763vw;
+    top: 16.277777779vw;
+    height: 19vw;
+    width: 33.5vw;
+  }
+
+  .black-vertical-screen {
+    top: 12.426vw;
+    left: 12.323vw;
+    width: 19vw;
+    height: 33.4vw;
+  }
+
 /*
   .form {
     flex: 1 0 60%;
