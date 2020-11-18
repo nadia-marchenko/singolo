@@ -284,10 +284,11 @@ h2.our-services {
 }
 
 .icon-service {
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 37px;
   margin: 10px 0 0 10px;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .round-service {
@@ -751,13 +752,13 @@ p.lighter {
 
 .input {
   margin-bottom: 15px;
-  /* max-width: 619px; */
   width: 100%;
   resize: vertical;
   height: 38px;
   padding-left: 20px;
   border-radius: 5px;
   background-color: #d6564f;
+  color: #f0d8d9;
   border: none;
 }
 
@@ -783,10 +784,10 @@ textarea {
   border-radius: 5px;
   padding-left: 20px;
   padding-top: 10px;
-  /* max-width: 619px; */
   width: 100%;
   height: 202px;
   background-color: #d6564f;
+  color: #f0d8d9;
   border: none;
   resize: none;
 }
