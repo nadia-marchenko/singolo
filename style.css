@@ -172,6 +172,7 @@ li:not(.active):hover {
   left: 180px;
   bottom: 82px;
   width: 40px;
+  cursor: pointer;
 }
 
 .horizontal-phone-btn {
@@ -179,6 +180,7 @@ li:not(.active):hover {
   top: 275px;
   right: 524px;
   height: 40px;
+  cursor: pointer;
 }
 
 .black-vertical-screen {
@@ -190,6 +192,10 @@ li:not(.active):hover {
   background-color: #000000;
 }
 
+.black-vertical-screen.hidden {
+  display: none;
+}
+
 .black-horizontal-screen {
   position: absolute;
   right: 171.5px;
@@ -197,6 +203,10 @@ li:not(.active):hover {
   height: 192.124565px;
   width: 341px;
   background-color: #000000;
+}
+
+.black-horizontal-screen.hidden {
+  display: none;
 }
 
 .slider2 {
