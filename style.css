@@ -1,3 +1,6 @@
+/* Global styles
+------------------------------------*/
+
 html {
   font-size: 10px;
 }
@@ -14,6 +17,68 @@ body {
   width: 92%;
   margin: auto;
 }
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: #666d89;
+}
+
+.bg-bottom {
+  height: 6px;
+  background-color: #ffffff;
+}
+
+h2.normal {
+  margin: 57px 0 27px 0;
+  font-size: 3rem;
+  line-height: 1.8rem;
+  font-weight: bold;
+  text-align: left;
+  color: #666d89;
+}
+
+h3 {
+  margin: 17px 0 -18px 0;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  font-weight: bold;
+  text-align: left;
+  color: #666d89;
+}
+
+p.description {
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 3rem;
+  text-align: justify;
+  color: #767e9e;
+}
+
+p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 3rem;
+  text-align: justify;
+  color: #f0d8d9;
+}
+
+p.lighter {
+  margin-top: 29px;
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+}
+
+a {
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  color: #f0d8d9;
+  text-decoration: none;
+}
+
+/* Navigation
+------------------------------------*/
 
 .header {
   padding-top: 40px;
@@ -74,6 +139,9 @@ li:not(.active):hover {
   cursor: pointer;
   color: #f06c64;
 }
+
+/* Slider
+------------------------------------*/
 
 .slider {
   display: flex;
@@ -221,6 +289,36 @@ li:not(.active):hover {
   height: 215px;
 }
 
+.prev-button {
+  flex: 1 0 5%;
+  position: absolute;
+  top: 312px;
+  width: 16px;
+  height: 27px;
+  margin: 65px 0 0 40px;
+  cursor: pointer;
+  background: url(assets/chev.svg);
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.next-button {
+  flex: 1 0 5%;
+  position: absolute;
+  top: 312px;
+  right: 40px;
+  width: 16px;
+  height: 27px;
+  margin-top: 65px;
+  cursor: pointer;
+  background: url(assets/next.svg);
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+/* Our Services
+------------------------------------*/
+
 .services {
   height: auto;
   scroll-margin-top: 95px;
@@ -242,13 +340,6 @@ p.lighter-services {
   font-weight: lighter;
   font-size: 1.8rem;
   line-height: 3rem;
-  color: #666d89;
-}
-
-h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  line-height: 1.8rem;
   color: #666d89;
 }
 
@@ -298,66 +389,6 @@ h2.our-services {
   height: 56px;
 }
 
-.horizontal-phone {
-  width: 400px;
-  height: 200px;
-  background-color: #ffffff;
-  border-radius: 25px;
-}
-
-.black-screen {
-  width: 188px;
-  height: 333px;
-  margin: 22px 0 0 11px;
-  background: #000000;
-  background-position: -14px -135px;
-  border: 3px solid #c7c8c7;
-}
-
-.horizontal-screen::before {
-  content: "";
-  position: absolute;
-  top: 138px;
-  z-index: -1;
-  left: -60px;
-  transform: rotate(-90deg);
-  height: 188px;
-  width: 338px;
-  background: url(assets/Layer\ 5.png) 0 0 repeat;
-  background-position: -124px -120px;
-}
-
-.horizontal-black-screen::before {
-  content: "";
-  position: absolute;
-  top: 138px;
-  z-index: -1;
-  left: -60px;
-  transform: rotate(-90deg);
-  height: 188px;
-  width: 338px;
-  background: #000000 0 0 repeat;
-  background-position: -124px -120px;
-}
-
-.horizontal-screen {
-  width: 185px;
-  height: 335px;
-  margin: 20px 0 0 12px;
-  border: 3px solid #c7c8c7;
-}
-
-.bg-bottom {
-  height: 6px;
-  background-color: #ffffff;
-}
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 29px;
-}
-
 .services-items {
   display: flex;
   justify-content: space-between;
@@ -386,32 +417,8 @@ h2.our-services {
   display: block;
 }
 
-.prev-button {
-  flex: 1 0 5%;
-  position: absolute;
-  top: 312px;
-  width: 16px;
-  height: 27px;
-  margin: 65px 0 0 40px;
-  cursor: pointer;
-  background: url(assets/chev.svg);
-  background-repeat: no-repeat;
-  z-index: 1;
-}
-
-.next-button {
-  flex: 1 0 5%;
-  position: absolute;
-  top: 312px;
-  right: 40px;
-  width: 16px;
-  height: 27px;
-  margin-top: 65px;
-  cursor: pointer;
-  background: url(assets/next.svg);
-  background-repeat: no-repeat;
-  z-index: 1;
-}
+/* Portfolio
+------------------------------------*/
 
 .first-bottom {
   height: 6px;
@@ -430,70 +437,6 @@ h2.our-services {
   scroll-margin-top: 95px;
   background-color: #2d303a;
   padding-top: 10px;
-}
-
-h2.normal {
-  margin: 57px 0 27px 0;
-  font-size: 3rem;
-  line-height: 1.8rem;
-  font-weight: bold;
-  text-align: left;
-  color: #666d89;
-}
-
-h3 {
-  margin: 17px 0 -18px 0;
-  font-size: 1.8rem;
-  line-height: 1.8rem;
-  font-weight: bold;
-  text-align: left;
-  color: #666d89;
-}
-
-p.description {
-  font-size: 1.8rem;
-  font-weight: 300;
-  line-height: 3rem;
-  text-align: justify;
-  color: #767e9e;
-}
-
-p.lighter-employee {
-  margin: 28px 0 45px 0;
-  font-weight: 400;
-  font-size: 1.2rem;
-  line-height: 2.2rem;
-  color: #767e9e;
-}
-
-.about-us {
-  height: auto;
-  scroll-margin-top: 95px;
-  padding-top: 10px;
-  background-color: #f2f2f2;
-}
-
-.employees {
-  display: flex;
-  padding-top: 44px;
-  justify-content: space-between;
-}
-
-.employee {
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-  margin: 5px;
-}
-
-.sharing-button {
-  display: flex;
-  margin-left: -8px;
-  margin-top: -9px;
-}
-
-.first-sharing {
-  margin-left: 0px;
 }
 
 .tags {
@@ -631,6 +574,47 @@ p.lighter-employee {
   background-position: -36px -60px;
 }
 
+/* About Us
+------------------------------------*/
+
+p.lighter-employee {
+  margin: 28px 0 45px 0;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  color: #767e9e;
+}
+
+.about-us {
+  height: auto;
+  scroll-margin-top: 95px;
+  padding-top: 10px;
+  background-color: #f2f2f2;
+}
+
+.employees {
+  display: flex;
+  padding-top: 44px;
+  justify-content: space-between;
+}
+
+.employee {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 5px;
+}
+
+.sharing-button {
+  display: flex;
+  margin-left: -8px;
+  margin-top: -9px;
+}
+
+.first-sharing {
+  margin-left: 0px;
+}
+
 .photo {
   width: 100%;
   height: auto;
@@ -697,6 +681,9 @@ p.lighter-employee {
   filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
 }
 
+/* Contacts
+------------------------------------*/
+
 .wrapper-contacts {
   padding-top: 10px;
 }
@@ -730,20 +717,6 @@ h3.information {
   text-align: left;
   color: #f0d8d9;
   margin-top: -2px;
-}
-
-p {
-  font-size: 1.8rem;
-  font-weight: 300;
-  line-height: 3rem;
-  text-align: justify;
-  color: #f0d8d9;
-}
-
-p.lighter {
-  margin-top: 29px;
-  font-size: 1.2rem;
-  line-height: 2.2rem;
 }
 
 .form {
@@ -840,13 +813,6 @@ textarea {
   margin: 1px 1px 1px 1px;
 }
 
-a {
-  font-size: 1.2rem;
-  line-height: 2.2rem;
-  color: #f0d8d9;
-  text-decoration: none;
-}
-
 ::placeholder {
   font-size: 1.2rem;
   line-height: 2.2rem;
@@ -888,6 +854,9 @@ a {
   background-color: #ea676b;
 }
 
+/* Footer
+------------------------------------*/
+
 .footer {
   height: 76px;
   background-color: #2d303a;
@@ -908,51 +877,6 @@ a {
   cursor: pointer;
 }
 
-.icon-fb {
-  background-image: url(assets/facebook.svg);
-  background-repeat: no-repeat;
-  width: 8px;
-  height: 14px;
-  margin: 8px 0 0 11px;
-  display: inline-block;
-}
-
-.icon-google {
-  background-image: url(assets/google+.svg);
-  background-repeat: no-repeat;
-  width: 14px;
-  height: 14px;
-  margin: 8px 0 0 8px;
-  fill: #666d89;
-  display: inline-block;
-}
-
-.icon-twitter {
-  background-image: url(assets/twitter.svg);
-  background-repeat: no-repeat;
-  width: 14px;
-  height: 12px;
-  margin: 9px 0 0 8px;
-  fill: #666d89;
-  display: inline-block;
-}
-
-.icon-linkedin {
-  background-image: url(assets/linkedin.svg);
-  background-repeat: no-repeat;
-  width: 14px;
-  height: 12px;
-  margin: 9px 0 0 8px;
-  fill: #666d89;
-  display: inline-block;
-}
-
-.icon:hover,
-.icon:focus {
-  transition-delay: 0.1s;
-  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
-}
-
 .copyright {
   margin-top: 27px;
   margin-left: 1px;
@@ -965,6 +889,9 @@ a {
   display: flex;
   margin-top: 46px;
 }
+
+/* Styles for Responsive Design
+------------------------------------*/
 
 @media (max-width: 1019px) {
   .image {
